@@ -16,6 +16,11 @@
     margin: auto;
   }
   
+
+
+
+
+
   /* Header */
   .header {
     position: fixed;
@@ -40,6 +45,14 @@
     text-decoration: none;
   }
   
+
+
+
+
+
+
+
+
   /* topContent */
   .topContent {
     display: flex;
@@ -114,20 +127,12 @@
     transition: 0.3s;
     border-radius: 5px;
   }
-  
   .btn-white:hover {
     background-color: #ddd;
   }
   
-  /* Buttons */
-  button, .btn-primary, .btn-order {
-    background: black;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-  }
+
+
 
   .empty {
     height: 100px;
@@ -135,6 +140,9 @@
     background-color: #282829;
   }
   
+
+
+
   /* info */
   .info-block {
     display: flex;
@@ -143,7 +151,7 @@
     color: white;
   } 
   .info-image {
-    flex: 1 1 33.33%;
+    flex: 1 1 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +164,7 @@
   }
   
   .info-center {
-    flex: 1 1 33.33%;
+    flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,6 +177,8 @@
   .info-list {
     list-style: none;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .info-list li {
@@ -183,21 +193,24 @@
     flex-shrink: 0;
 
   }
-      
-  
-      
+
   
   /* Form section */
   .form-section {
-    background: #f4f4f4;
-    padding: 60px 0;
+    background: #282829;
+    padding: 80px 0;
   }
   
   .form-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
+    max-width: 1597px;
+    max-height: 628px;
+    background: white;
+    border-radius: 10px;
+    padding: 5rem;
   }
   
   .form-text {
@@ -207,9 +220,51 @@
   .form-text form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
-  
+
+  .form-text h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .form-text input[type="text"],
+  .form-text input[type="email"] {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+  color: #333;
+}
+
+.form-checkbox a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.btn-submit {
+  padding: 14px 24px;
+  background: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-image {
+  flex: 1 1 250px;
+  text-align: center;
+}
   .form-image img {
     max-width: 100%;
   }
