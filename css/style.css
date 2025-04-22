@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #fff;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .header {
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* topContent */
+  .topContent {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  .topContent-left {
+    background-color: #1a1a1a;
+    color: white;
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+  
+  .topContent-content {
+    max-width: fit-content;
+  }
+  
+  .topContent-content h1 {
+    font-size: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .topContent-content p {
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  
+  .topContent-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  
+  .topContent-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .topContent-features .icon {
+    width: 20px;
+    height: 20px;
+    stroke: #ffc107;
+  }
+  
+  .topContent-right {
+    flex: 1 1 35%;
+    position: relative;
+
+  }
+  
+  .topContent-right img {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  }
+  
+  .btn-white {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-white:hover {
+    background-color: #ddd;
+  }
+  
+  /* Buttons */
+  button, .btn-primary, .btn-order {
+    background: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Features section */
+  .features-section .features-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 40px;
+  }
+  
+  .feature-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form section */
+  .form-section {
+    background: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .form-text {
+    flex: 1 1 400px;
+  }
+  
+  .form-text form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-image img {
+    max-width: 100%;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .hero-content,
+    .form-wrapper,
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav {
+      display: none;
+    }
+  }
