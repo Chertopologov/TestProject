@@ -12,7 +12,6 @@
   
   .container {
     max-width: 1200px;
-    padding: 0 20px;
     margin: auto;
   }
   
@@ -186,6 +185,8 @@
     font-size: 24px;
     display: flex;
     align-items: flex-start;
+    border-bottom: 0.3px solid #c0c0c0;
+    padding-bottom: 2rem;
   }
   
   .info-icons {
@@ -198,23 +199,31 @@
   /* Form section */
   .form-section {
     background: #282829;
-    padding: 80px 0;
+    padding: 80px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   
   .form-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    align-items: center;
+    align-items: stretch;
     max-width: 1597px;
-    max-height: 628px;
+    width: 100%;
     background: white;
     border-radius: 10px;
-    padding: 5rem;
+    box-sizing: border-box;
+    overflow: hidden;
   }
   
   .form-text {
-    flex: 1 1 400px;
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .form-text form {
@@ -262,36 +271,102 @@
 }
 
 .form-image {
-  flex: 1 1 250px;
-  text-align: center;
+  flex: 1;
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  
 }
   .form-image img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 10px 10px 0;
   }
   
   /* Footer */
   .footer {
-    background: #222;
-    color: #fff;
-    padding: 40px 0;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .footer a {
+    background-color: #222222;
     color: #ccc;
+    /* padding-top: 20px; */
+    font-family: sans-serif;
+  }
+  
+  .footer-top {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .footer-nav a {
+    color: #ccc;
+    margin: 0 20px;
     text-decoration: none;
-    margin-right: 15px;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: serif;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-center a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right .btn-order {
+    background: white;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .footer-right a {
+    display: block;
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
   }
   
   /* Адаптивность */
   @media (max-width: 768px) {
-    .hero-content,
+    .topContent,
     .form-wrapper,
     .footer-content {
       flex-direction: column;
